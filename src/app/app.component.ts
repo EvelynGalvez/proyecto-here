@@ -18,8 +18,6 @@ export class AppComponent implements OnInit {
         this.platform = new H.service.Platform({
             "app_id": "KbKafnCBtngVMwl6F2zQ",
             "app_code": "-K3tSTmhfjA5JPOhfAKU9w"
-     
-
         });
     }
 
@@ -38,24 +36,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-
-
-
-
-
-
-// import { Component } from '@angular/core';
-// import { Router } from '@angular/router';
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.css']
-// })
-// export class AppComponent {
-//   title = 'proyecto-here';
-
-//   constructor( private router: Router ) {}
-// }
