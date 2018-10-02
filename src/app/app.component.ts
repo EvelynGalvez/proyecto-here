@@ -1,13 +1,61 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+
+declare var H: any;
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'proyecto-here';
+export class AppComponent implements OnInit {
 
-  constructor( private router: Router ) {}
+    private platform: any;
+
+    @ViewChild("map")
+    public mapElement: ElementRef;
+
+    public constructor() {
+        this.platform = new H.service.Platform({
+            "app_id": "KbKafnCBtngVMwl6F2zQ",
+            "app_code": "-K3tSTmhfjA5JPOhfAKU9w"
+     
+
+        });
+    }
+
+    public ngOnInit() { }
+
+    public ngAfterViewInit() {
+        let defaultLayers = this.platform.createDefaultLayers();
+        let map = new H.Map(
+            this.mapElement.nativeElement,
+            defaultLayers.normal.map,
+            {
+                zoom: 10,
+                center: { lat: 37.7397, lng: -121.4252 }
+            }
+        );
+    }
+
 }
+
+
+
+
+
+
+
+
+// import { Component } from '@angular/core';
+// import { Router } from '@angular/router';
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.css']
+// })
+// export class AppComponent {
+//   title = 'proyecto-here';
+
+//   constructor( private router: Router ) {}
+// }
