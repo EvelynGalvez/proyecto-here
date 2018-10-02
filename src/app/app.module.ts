@@ -10,6 +10,8 @@ import { MenuNavbarComponent } from './components/menu-navbar/menu-navbar.compon
 // Componentes
 import { MapsComponent } from './components/maps/maps.component';
 
+import { HereMapComponent } from './here-map/here-map.component';
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -26,6 +28,8 @@ const appRoutes: Routes = [
     AppComponent,
     MenuNavbarComponent,
     MapsComponent,
+  
+    HereMapComponent,
   ],
   imports: [
     BrowserModule,
