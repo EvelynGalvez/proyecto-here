@@ -14,7 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // auth
 import {AuthService} from './auth.service';
-import { environment } from '../environments/environment';
+import { environment } from './environments/environment';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -22,10 +23,13 @@ import { environment } from '../environments/environment';
     AppComponent,
     HereMapComponent,
     MenuNavbarComponent,
+    LoginComponent,
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule,
     AngularFireAuthModule,
     ReactiveFormsModule,
+    UserComponent,
+  
   
   ],
   imports: [
