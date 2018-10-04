@@ -1,4 +1,4 @@
-.cuadro-policia {
+/* .cuadro-policia {
   width: 50%;
   height: 30%;
   background-color: rgba(44, 136, 121, 0.808);
@@ -11,4 +11,8 @@
 
 .ruta-segura-component {
   z-index: 1;
+} */
+
+.btn{
+  position: absolute;
 }

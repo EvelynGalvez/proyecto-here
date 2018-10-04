@@ -4,11 +4,12 @@
     font-family: 'Roboto', sans-serif !important; 
     margin-bottom: 10%;
 }
-.btn{
-    margin-top: 2%;
-    background-color: #EEEEEE;
-    color: black;
-    text-align: center;
+.primerParrafo{
+    margin-top: 5%;
+}
+.p{
     font-family: 'Roboto', sans-serif !important; 
-    font-size: 15px;
+}
+.fas{
+    color:#028090; 
 }
