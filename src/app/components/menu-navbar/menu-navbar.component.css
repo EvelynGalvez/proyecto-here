@@ -1,0 +1,20 @@
+.bg-light{
+    background-color: #028090 !important;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif !important; 
+    color: white !important;
+    font-size: 13px!important;
+}
+.fas {
+    color: #EAFCE8;
+}
+
+/* .fa-flag{
+
+}
+. */
