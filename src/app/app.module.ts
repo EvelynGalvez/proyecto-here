@@ -16,6 +16,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {AuthService} from './auth.service';
 import { environment } from '../environments/environment';
 import { UserComponent } from './user/user.component';
+import { AppRoutingModule } from './app-routing.module';
+import { InteresComponent } from './components/interes/interes.component';
+import { InformacionComponent } from './components/informacion/informacion.component';
+import { LugaresCercanosComponent } from './components/lugares-cercanos/lugares-cercanos.component';
+import { GpsComponent } from './components/gps/gps.component';
+import { ConfiguracionComponent } from './components/configuracion/configuracion.component';
+import { AyudaComponent } from './components/ayuda/ayuda.component';
+import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.component';
 
 
 @NgModule({
@@ -24,16 +32,23 @@ import { UserComponent } from './user/user.component';
     HereMapComponent,
     MenuNavbarComponent,
     LoginComponent,
-    UserComponent
-    
-  
-  
+    UserComponent,
+    InteresComponent,
+    InformacionComponent,
+    LugaresCercanosComponent,
+    GpsComponent,
+    ConfiguracionComponent,
+    AyudaComponent,
+    RutaSeguraComponent, 
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
+    AngularFireModule,
+    AngularFireAuthModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase)
-    
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
