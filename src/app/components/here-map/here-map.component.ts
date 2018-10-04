@@ -73,7 +73,6 @@ export class HereMapComponent implements OnInit {
             }
         );
         this.markerCurrentPosition(latitud, longitud);
-        let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
     }
 
     markerCurrentPosition(latitud, longitud){

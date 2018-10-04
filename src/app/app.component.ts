@@ -57,8 +57,12 @@ export class AppComponent implements OnInit {
                 center: { lat: latitud, lng: longitud }
             }
         );
+        let mapEvents = new H.mapevents.MapEvents(map);
+        map.addEventListener('tap', function(evt) {
+            console.log(evt.type, evt.currentPointer.type); 
+        });
+        let behavior = new H.mapevents.Behavior(mapEvents);
         this.markerCurrentPosition(latitud, longitud);
-        let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
     }
 
     markerCurrentPosition(latitud, longitud){
