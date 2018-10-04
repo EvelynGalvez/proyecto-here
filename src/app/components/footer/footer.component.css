@@ -1,10 +1,11 @@
 .nav-tabs{
     margin-bottom: 0px;  
 }
-.bg-primary{
-    background-color: #028090 !important;
+.bg-light{
+    background-color: #EEEEEE!important;
     margin-bottom: 0px;
 }
-.imagen{
-    width: 50px;
+.iconos{
+    width: 20px;
 }
+
