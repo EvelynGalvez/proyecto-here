@@ -62,10 +62,10 @@ export class AppComponent implements OnInit {
             console.log(evt.type, evt.currentPointer.type); 
         });
         let behavior = new H.mapevents.Behavior(mapEvents);
-        this.markerCurrentPosition(latitud, longitud);
+        //this.markerCurrentPosition(latitud, longitud);
     }
 
-    markerCurrentPosition(latitud, longitud){
+    /*markerCurrentPosition(latitud, longitud){
         let icon = new H.map.Icon('../assets/img/marker.jpg'),
           coords = {
             lat: latitud,
@@ -75,6 +75,6 @@ export class AppComponent implements OnInit {
             icon: icon
           });
         this.map.addObject(marker);
-    }
+    }*/
 
 }
