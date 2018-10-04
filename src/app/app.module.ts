@@ -42,8 +42,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AyudaComponent,
     RutaSeguraComponent,
     FooterComponent,
-  
-  
     RutaSeguraComponent, 
   ],
   imports: [

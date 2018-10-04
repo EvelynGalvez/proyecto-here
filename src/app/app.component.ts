@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 declare var H: any;
 
