@@ -44,6 +44,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent,
   
   
+    RutaSeguraComponent, 
   ],
   imports: [
     BrowserModule,
@@ -52,6 +53,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AngularFireModule,
     AngularFireAuthModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
