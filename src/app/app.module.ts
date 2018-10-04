@@ -39,9 +39,7 @@ import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.compon
     GpsComponent,
     ConfiguracionComponent,
     AyudaComponent,
-    RutaSeguraComponent,
-  
-  
+    RutaSeguraComponent, 
   ],
   imports: [
     BrowserModule,
@@ -50,6 +48,7 @@ import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.compon
     AngularFireModule,
     AngularFireAuthModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
