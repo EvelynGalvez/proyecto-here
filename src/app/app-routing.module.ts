@@ -10,6 +10,7 @@ import { GpsComponent } from './components/gps/gps.component';
 import { ConfiguracionComponent } from './components/configuracion/configuracion.component';
 import { AyudaComponent } from './components/ayuda/ayuda.component';
 import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.component';
+import { PoliceComponent } from './components/police/police.component';
 
 
 
@@ -22,7 +23,8 @@ export const app_routes: Routes = [
     {path: 'gps', component: GpsComponent},
     {path: 'configuracion', component: ConfiguracionComponent},
     {path: 'ayuda', component: AyudaComponent},
-    {path: '**', component: RutaSeguraComponent}
+    {path: 'policia', component: PoliceComponent },
+    {path: '**', component: RutaSeguraComponent},
 ]
 
 @NgModule({

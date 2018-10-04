@@ -1,0 +1,14 @@
+.cuadro-policia {
+  width: 50%;
+  height: 30%;
+  background-color: rgba(44, 136, 121, 0.808);
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+}
+
+.ruta-segura-component {
+  z-index: 1;
+}

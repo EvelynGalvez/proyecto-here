@@ -25,6 +25,7 @@ import { ConfiguracionComponent } from './components/configuracion/configuracion
 import { AyudaComponent } from './components/ayuda/ayuda.component';
 import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PoliceComponent } from './components/police/police.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AyudaComponent,
     RutaSeguraComponent,
     FooterComponent,
-    RutaSeguraComponent, 
+    RutaSeguraComponent,
+    PoliceComponent, 
   ],
   imports: [
     BrowserModule,
