@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes ,RouterModule } from "@angular/router";
+
 import { HereMapComponent } from './components/here-map/here-map.component';
 import { LoginComponent } from './login/login.component';
 import { InteresComponent } from './components/interes/interes.component';
@@ -13,7 +14,7 @@ import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.compon
 
 
 
-const app_routes: Routes = [
+export const app_routes: Routes = [
     {path:'', component: RutaSeguraComponent},
     {path: 'interes', component: InteresComponent},
     {path: 'informacion', component: InformacionComponent},
