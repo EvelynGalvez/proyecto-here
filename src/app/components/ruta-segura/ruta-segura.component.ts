@@ -26,7 +26,8 @@ export class RutaSeguraComponent implements OnInit {
   public constructor() {
       this.platform = new H.service.Platform({
           "app_id": "KbKafnCBtngVMwl6F2zQ",
-          "app_code": "-K3tSTmhfjA5JPOhfAKU9w"
+          "app_code": "-K3tSTmhfjA5JPOhfAKU9w",
+          useHTTPS: true
       });
   }
 
@@ -45,7 +46,8 @@ export class RutaSeguraComponent implements OnInit {
    public centerMap(latitud,longitud) {
       let platform = new H.service.Platform({
           "app_id": "KbKafnCBtngVMwl6F2zQ",
-          "app_code": "-K3tSTmhfjA5JPOhfAKU9w"
+          "app_code": "-K3tSTmhfjA5JPOhfAKU9w",
+          useHTTPS: true
       });
       let defaultLayers = platform.createDefaultLayers();
       let map = new H.Map(
