@@ -35,9 +35,12 @@ export class RutaSeguraComponent implements OnInit {
           navigator.geolocation.getCurrentPosition((res) => {
               this.latitud = res.coords.latitude;
               this.longitud = res.coords.longitude;
+              console.log(res.coords.latitude);
+              console.log(res.coords.longitude);
               let latitud = this.latitud;
               let longitud = this.longitud;
               this.centerMap(latitud, longitud);
+              console.log('latitud: ' + latitud + ' longitud: ' + longitud);
           })
       }
    }
@@ -60,6 +63,10 @@ export class RutaSeguraComponent implements OnInit {
       map.addEventListener('tap', function(evt) {
           console.log(evt.type, evt.currentPointer.type); 
       });
+        let coords = {lat: latitud, lng: longitud},
+        marker = new H.map.Marker(coords);
+        map.addObject(marker);
+        map.setCenter(coords);
       let behavior = new H.mapevents.Behavior(mapEvents);
       //this.markerCurrentPosition(latitud, longitud);
   }
