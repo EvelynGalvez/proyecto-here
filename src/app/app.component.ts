@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 declare var H: any;
 
@@ -57,11 +59,15 @@ export class AppComponent implements OnInit {
                 center: { lat: latitud, lng: longitud }
             }
         );
-        this.markerCurrentPosition(latitud, longitud);
-        let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
+        let mapEvents = new H.mapevents.MapEvents(map);
+        map.addEventListener('tap', function(evt) {
+            console.log(evt.type, evt.currentPointer.type); 
+        });
+        let behavior = new H.mapevents.Behavior(mapEvents);
+        //this.markerCurrentPosition(latitud, longitud);
     }
 
-    markerCurrentPosition(latitud, longitud){
+    /*markerCurrentPosition(latitud, longitud){
         let icon = new H.map.Icon('../assets/img/marker.jpg'),
           coords = {
             lat: latitud,
@@ -71,6 +77,6 @@ export class AppComponent implements OnInit {
             icon: icon
           });
         this.map.addObject(marker);
-    }
+    }*/
 
 }

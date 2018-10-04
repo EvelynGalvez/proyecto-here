@@ -72,11 +72,10 @@ export class HereMapComponent implements OnInit {
                 center: { lat: latitud, lng: longitud }
             }
         );
-        this.markerCurrentPosition(latitud, longitud);
-        let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
+        //this.markerCurrentPosition(latitud, longitud);
     }
 
-    markerCurrentPosition(latitud, longitud){
+    /*markerCurrentPosition(latitud, longitud){
         let icon = new H.map.Icon('../../../assets/img/marker.jpg'),
           coords = {
             lat: latitud,
@@ -86,6 +85,6 @@ export class HereMapComponent implements OnInit {
             icon: icon
           });
         this.map.addObject(marker);
-    }
+    }*/
 
 }
