@@ -11,7 +11,8 @@ import { ConfiguracionComponent } from './components/configuracion/configuracion
 import { AyudaComponent } from './components/ayuda/ayuda.component';
 import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.component';
 import { PoliceComponent } from './components/police/police.component';
-
+import { AmbulanciaComponent } from './components/ambulancia/ambulancia.component';
+import { BomberosComponent } from './components/bomberos/bomberos.component';
 
 
 
@@ -24,6 +25,8 @@ export const app_routes: Routes = [
     {path: 'configuracion', component: ConfiguracionComponent},
     {path: 'ayuda', component: AyudaComponent},
     {path: 'policia', component: PoliceComponent },
+    {path: 'ambulancia', component: AmbulanciaComponent},
+    {path: 'bomberos', component: BomberosComponent},
     {path: '**', component: RutaSeguraComponent},
 ]
 

@@ -26,6 +26,8 @@ import { AyudaComponent } from './components/ayuda/ayuda.component';
 import { RutaSeguraComponent } from './components/ruta-segura/ruta-segura.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PoliceComponent } from './components/police/police.component';
+import { AmbulanciaComponent } from './components/ambulancia/ambulancia.component';
+import { BomberosComponent } from './components/bomberos/bomberos.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { PoliceComponent } from './components/police/police.component';
     RutaSeguraComponent,
     FooterComponent,
     RutaSeguraComponent,
-    PoliceComponent, 
+    PoliceComponent,
+    AmbulanciaComponent,
+    BomberosComponent, 
   ],
   imports: [
     BrowserModule,
